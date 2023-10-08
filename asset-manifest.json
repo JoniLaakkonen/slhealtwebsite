@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/JoniLaakkonen/slhealtwebsite/static/css/main.b94ae960.css",
-    "main.js": "/JoniLaakkonen/slhealtwebsite/static/js/main.97a78d78.js",
+    "main.js": "/JoniLaakkonen/slhealtwebsite/static/js/main.2785ca74.js",
     "static/js/787.ed72a192.chunk.js": "/JoniLaakkonen/slhealtwebsite/static/js/787.ed72a192.chunk.js",
     "index.html": "/JoniLaakkonen/slhealtwebsite/index.html",
     "main.b94ae960.css.map": "/JoniLaakkonen/slhealtwebsite/static/css/main.b94ae960.css.map",
-    "main.97a78d78.js.map": "/JoniLaakkonen/slhealtwebsite/static/js/main.97a78d78.js.map",
+    "main.2785ca74.js.map": "/JoniLaakkonen/slhealtwebsite/static/js/main.2785ca74.js.map",
     "787.ed72a192.chunk.js.map": "/JoniLaakkonen/slhealtwebsite/static/js/787.ed72a192.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b94ae960.css",
-    "static/js/main.97a78d78.js"
+    "static/js/main.2785ca74.js"
   ]
 }
