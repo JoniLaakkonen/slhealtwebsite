@@ -1,0 +1,27 @@
+article#compbox_tietoja {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    min-height: 450px;
+    height: 100%;
+    max-width: 700px;
+    background-color: var(--color-green-ui);
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+article#compbox_tietoja h4{
+    object-fit: cover;
+}
+article#compbox_tietoja h4{
+    margin-top: 2rem;
+    color: var(--color-text-darkgreen);
+    font-size: larger;
+}
+article#compbox_tietoja p{
+    margin-top: 2rem;
+    color: var(--color-text-darkgreen);
+    font-size: medium;
+}

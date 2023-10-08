@@ -1,0 +1,15 @@
+section.tagline {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-darkgreen-ui);
+    height: 15vh;
+    margin-bottom: 5rem;
+}
+section.tagline > p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-light);
+}

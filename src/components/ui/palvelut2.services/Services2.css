@@ -1,0 +1,142 @@
+section#Services_content2 {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    margin-top: 2rem;
+}
+section#Services_content2 .service_container {
+    position: relative;
+    display: flex;
+    margin: 0 calc(7rem - 20px);
+    border-radius: 30px;
+    max-width: 1200px;
+}
+.even {
+    background-color: var(--color-green-ui);
+}
+.odd {
+    background-color: var(--color-darkgreen-ui);
+    flex-direction: row-reverse;
+    color: var(--color-text-light);
+}
+.servicecont_img {
+    width: 1200px;
+    object-fit: cover;
+    max-height: 100%;
+    border-radius: 30px;
+}
+.servicecont_img.hidden {
+    max-height: 400px;
+}
+.service_info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+}
+.service_info:last-child {
+    align-self: center;
+}
+.service_info > h2{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin: 2rem 0;
+}
+.service_info > .service_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    letter-spacing: 0.3;
+    margin-top: 2.5rem;
+}
+.scardButtons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    margin-top: 2rem;
+}
+.linktoService {
+    color: var(--color-orange);
+    width: 100%;
+    padding: 0.9rem 0;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--color-text-light);
+}
+.prices > p {
+    font-size: 18px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+.service_info button{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.even > .service_info button{
+    background-color: var(--color-darkgreen-ui);
+    color: var(--color-text-light);
+}
+.odd > .service_info button{
+    background-color: var(--color-green-ui);
+    color: var(--color-text-darkgreen);
+}
+.service_info > .service_text.visible{
+    display: flex;
+}
+.service_info > .service_text.hidden{
+    display: none;
+}
+@media (max-width: 1057px) {
+    section#Services_content {
+        justify-content: center;
+        align-items: center;
+    }
+    .servicecont_img {
+        width: 50%;
+        object-fit: cover;
+    }
+    section#Services_content .service_container {
+        margin: 0 calc(7rem - 20px);
+        width: 100%;
+    }
+    .service_info {
+        align-self: center;
+    }
+}
+@media (max-width: 857px) {
+    section#Services_content .service_container {
+        padding: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 690px) {
+    section#Services_content {
+        justify-content: center;
+        align-items: center;
+    }
+    section#Services_content .service_container {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .servicecont_img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}

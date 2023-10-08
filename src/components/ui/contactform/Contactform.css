@@ -1,0 +1,95 @@
+.form-box {
+    position: absolute;
+    display: flex;
+    height: 600px;
+    width: 85%;
+    max-width: 1000px;
+    top: 65vh;
+    left: calc(50% - 500px);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-darkgreen-ui);
+    border-radius: 30px;
+}
+.form-box > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-box > form > label {
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text-light);
+    cursor: auto;
+}
+.form-box > form > input {
+    width: 381.5736579500692px;
+    height: 46.798780487804834px;
+    font-size: 15.0px;
+    font-weight: 400;
+    border: none;
+    border-radius: 7px;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+.form-box > form > textarea {
+    width: 380px;
+    height: 150px;
+    font-size: 15.0px;
+    font-weight: 400;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+.form-box > form > input:focus, .form-box > form > textarea:focus {
+    outline: 1px solid var(--color-orange);
+}
+.submitBtn {
+    width: 380px;
+    height: 47px;
+    font-size: 15.0px;
+    font-weight: 400;
+    border: none;
+    border-radius: 7px;
+    padding: 0 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.submitBtn:hover {
+    background-color: var(--color-btn-light-hover);
+}
+.form-box > aside {
+    margin-left: 5rem;
+    color: var(--color-text-light);
+}
+.form-box > aside > section > h5{
+    margin-top: 2rem;
+}
+@media (max-width: 1150px) {
+    .form-box {
+        top: 10vh;
+        left: 0;
+        margin: 45vh 7.5%;
+    }
+}
+@media (max-width: 830px) {
+    .form-box {
+        flex-direction: column;
+        height: 1000px;
+        padding: 5rem 0;
+        align-items: start;
+    }
+    .form-box > form {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .form-box > aside {
+        margin-top: 5rem;
+    }
+    .form-box > form > input, .form-box > form > textarea, .form-box > form > button {
+        width: 100%;
+    }
+}

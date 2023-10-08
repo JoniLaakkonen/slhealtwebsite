@@ -1,0 +1,74 @@
+section#infobox {
+    position: relative;
+    display: flex;
+    min-height: 85vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/* Add a pseudo-element with color to create the colored overlay at the bottom */
+#infobox::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35vh;
+    background-color: var(--color-darkgreen-ui); /* Replace with your desired color */
+    z-index: -1; /* Make the pseudo-element appear behind the content */
+}
+section#infobox .info_item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 400px;
+    height: 100%;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: var(--color-bg);
+}
+section#infobox .info_item > h3 {
+    text-align: center;
+}
+section#infobox .info_item > p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    padding: 2rem;
+}
+section#infobox .info_item:nth-child(1) > p,
+section#infobox .info_item:nth-child(2) > p {
+  border-right: 1px solid var(--color-btn-dark-hover); /* Add a border to the first and second paragraphs */
+}
+section#infobox .info_item > a {
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-orange);
+    margin-bottom: 2rem;
+}
+@media (max-width: 690px) {
+    section#infobox {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    section#infobox .info_item {
+        width: 100%;
+        min-height: 100px;
+        height: 300px;
+        justify-content: space-around;
+        border-radius: 15px;
+        padding: 2rem 1rem;
+    }
+    section#infobox .info_item > p {
+        padding: 0;
+    }
+    section#infobox .info_item:nth-child(1) > p,
+    section#infobox .info_item:nth-child(2) > p {
+    border-right: none;
+    }
+    section#infobox .info_item:nth-child(1),
+    section#infobox .info_item:nth-child(2) {
+    border-bottom: 1px solid var(--color-text-dark);
+    border-radius: 0;
+    }
+}

@@ -1,0 +1,23 @@
+header#Header_tietoja {
+    position: relative;
+    height: 100vh;
+    max-height: 800px;
+}
+.headerpicture.tietoja {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.tietojaheadershadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #f2f2f2c0;
+}
+header#Header_tietoja > h1 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--color-darkgreen-logo);
+}

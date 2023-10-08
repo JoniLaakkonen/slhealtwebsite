@@ -1,0 +1,40 @@
+header#Header_palvelut {
+    position: relative;
+    height: 80vh;
+}
+.headerpicture.palvelut {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0; /* Lower z-index for the image */
+}
+.palvelutheadershadow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*background-color: #f2f2f251;*/
+    z-index: 1; /* Middle z-index for the background */
+}
+.palvelutheadershadow > h1 {
+    font-size: 56px;
+    margin-top: 6rem;
+    color: var(--color-text-light);
+    text-align: center;
+    z-index: 2; /* Higher z-index for the h1 */
+}
+@media (max-width: 900px) {
+    .tietojaheadertextbox > p {
+        font-size: 28px;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 690px) {
+    header#Header_palvelut {
+        position: relative;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,99 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-darkgreen-ui);
+}
+footer > .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 2rem calc(7rem - 20px) 2rem;
+    justify-content: space-between;
+}
+.footerlogo {
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.svgicon {
+    height: 50px;
+    transition: 100ms ease-in-out;
+    color: var(--color-text-light);
+    margin-right: 10px;
+}
+.svgicon.fa {
+    height: 55px;
+}
+.svgicon:hover {
+    scale: 1.1;
+}
+.footerlogo:hover {
+    filter: drop-shadow(7.071067811865475px 7.0710678118654755px 5px #d1cfcf);
+}
+footer .ftr_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .ftr_contact a {
+    color: var(--color-text-light);
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+footer .ftr_contact a:hover {
+    font-size: 23px;
+    transition: 100ms ease-in-out;
+}
+#footer-information {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+#footer-information::first-line,
+.footer_nav #footer-information {
+    font-size: large;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+.footerNav a{
+    font-size: large;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.footerNav a:hover{
+    font-size: larger;
+}
+.footerNav {
+    line-height: 2rem;
+}
+.footer_some {
+    display: flex;
+    flex-flow: column;
+}
+#tekjanoikeus {
+    bottom: 0;
+    color: var(--color-text-light);
+    cursor: pointer;
+    text-align: center;
+    margin: 2rem 0;
+}
+@media (max-width: 690px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footerlogo {
+        height: 80px;
+        object-fit: contain;
+        cursor: pointer;
+        transition: 100ms ease-in-out;
+        margin-bottom: 2.5rem;
+    }
+}

@@ -1,0 +1,80 @@
+header{
+    position: relative;
+    overflow: hidden;
+}
+.headershadow {
+    width: 100%;
+    height: 85vh;
+    opacity: 0.2;
+    background-color: #1a1f1ac0;
+    border-top: 1.0px solid #000000;
+    border-right: 1.0px solid #000000;
+    border-bottom: 1.0px solid #000000;
+    border-left: 1.0px solid #000000;
+}
+.headeroverlay{
+    position: absolute;    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 5rem;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 85vh;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%); /* Adjust the polygon points to create the desired quadrilateral */
+    /*background-color: #D5ECD5;*/
+    background-color: var(--color-bg);
+}
+.headeroverlay > h1, .headeroverlay > p{
+    color: var(--color-darkgreen-ui);
+    margin: 20px 2rem;
+}
+.headeroverlay > h1{
+    font-size: 46px;
+}
+.headeroverlay > p{
+    font-size: 24px;
+}
+
+.headerpicture.etusivu {
+    position: absolute;
+    left: 20%;
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    color: #1A1F1A;
+}
+@media (max-width: 1110px) {
+    .headeroverlay{
+        width: 65%;
+    }
+}
+@media (max-width: 890px) {
+    .headerpicture.etusivu {
+        left: 0;
+    }
+}
+/*---------------------Mobile----------------------*/
+@media (max-width: 690px) {
+    .headeroverlay{
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .headerpicture.etusivu {
+        height: 100vh;
+     }
+     .headercover {
+        height: 100vh;
+     }
+     .headershadow {
+        width: 100%;
+        height: 85vh;
+        opacity: 0.1;
+        background-color: #1a1f1ac0;
+        border-top: 1.0px solid #000000;
+        border-right: 1.0px solid #000000;
+        border-bottom: 1.0px solid #000000;
+        border-left: 1.0px solid #000000;
+    }
+}
