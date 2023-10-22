@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/slhealtwebsite/static/css/main.1b21d122.css",
-    "main.js": "/slhealtwebsite/static/js/main.58772d30.js",
+    "main.css": "/slhealtwebsite/static/css/main.b346808f.css",
+    "main.js": "/slhealtwebsite/static/js/main.ba931a2a.js",
+    "static/media/dad-2618982_1280.jpg": "/slhealtwebsite/static/media/dad-2618982_1280.21b787e4b720833c5338.jpg",
     "index.html": "/slhealtwebsite/index.html",
-    "main.1b21d122.css.map": "/slhealtwebsite/static/css/main.1b21d122.css.map",
-    "main.58772d30.js.map": "/slhealtwebsite/static/js/main.58772d30.js.map"
+    "main.b346808f.css.map": "/slhealtwebsite/static/css/main.b346808f.css.map",
+    "main.ba931a2a.js.map": "/slhealtwebsite/static/js/main.ba931a2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b21d122.css",
-    "static/js/main.58772d30.js"
+    "static/css/main.b346808f.css",
+    "static/js/main.ba931a2a.js"
   ]
 }
